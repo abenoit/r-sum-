@@ -1,0 +1,209 @@
+<nav class="blue lighten-1 fixed hidden" role="navigation" id="navbar">
+    <div class="nav-wrapper container">
+        <ul class="center hide-on-med-and-down">
+            <li><a ng-click="goTo('index')">Accueil</a></li>
+            <li><a ng-click="goTo('about')">About me</a></li>
+            <li><a ng-click="goTo('skills')">Compétences</a></li>
+            <li><a ng-click="goTo('exp')">Expérience professionnelle</a></li>
+            <li><a ng-click="goTo('school')">Formation</a></li>
+            <li><a ng-click="goTo('contact')">Contact</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<div id="index"
+     class="parallax-container"
+     when-visible="animateNavBarOut"
+     when-not-visible="animateNavBarIn">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center light-blue-text">Amélie Benoit</h1>
+            <div class="row center">
+                <h5 class="header col s12 light white-text">Ingénieure développement web / mobile</h5>
+            </div>
+            <div class="row center">
+                <a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('about')">
+                    <i class="material-icons left">sentiment_satisfied</i>
+                    A propos</a>
+                <a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('skills')">
+                    <i class="material-icons left">build</i>
+                    Compétences</a>
+
+                <a class="waves-effect  waves-light btn blue lighten-1" ng-click="goTo('exp')">
+                    <i class="material-icons left">work</i>
+                    Expérience professionnelle</a>
+                <!--<a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('school')">-->
+                <!--<i class="material-icons left" blue lighten-1>school</i>-->
+                <!--Formation</a>-->
+                <a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('contact')">
+                    <i class="material-icons left">mail_outline</i>
+                    Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax">
+        <img src="asset/images/Working-it.jpg" alt="Unsplashed background img 1"
+             style="display: block; transform: translate3d(-50%, 152px, 0px);">
+    </div>
+
+</div>
+
+<div class="container" id="about">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center">Speeds up development</h5>
+
+                    <p class="light">We did most of the heavy lifting for you to provide a default stylings that
+                        incorporate our custom components. Additionally, we refined animations and transitions to
+                        provide a smoother experience for developers.</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">User Experience Focused</h5>
+
+                    <p class="light">By utilizing elements and principles of Material Design, we were able to create
+                        a framework that incorporates components and animations that provide more feedback to users.
+                        Additionally, a single underlying responsive system across all platforms allow for a more
+                        unified user experience.</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Easy to work with</h5>
+
+                    <p class="light">We have provided detailed documentation as well as specific code examples to
+                        help new users get started. We are also always open to feedback and can answer any questions
+                        a user may have about Materialize.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light white-text">Une idée, <br/>Des idées ... </h5>
+            </div>
+        </div>
+    </div>
+    <div class="parallax">
+        <img src="asset/images/Dancing-Bulbs.jpg" alt="" style="display: block;">
+    </div>
+</div>
+
+<skills-directive></skills-directive>
+
+<experience-directive></experience-directive>
+
+<school-directive></school-directive>
+
+
+<div class="container hidden"
+     when-visible="animateElementIn"
+     id="contact">
+
+    <div class="section">
+        <div class="row">
+            <div class="col s12 center">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h4>Contact</h4>
+                <div class="row">
+                    <div class="col s3">
+                        <div class="contact-section phone-section">
+                            <a title="Numero de téléphone" href="tel:+33646839771" class="contact-section">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <div id="contact-phone" class="hidden">06 46 83 97 71</div>
+                        </div>
+                    </div>
+
+                    <div class="col s3">
+                        <div class="contact-section mail-section">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <div id="contact-email" class="hidden">amelie.benoit33[at]gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="contact-section" href="https://fr.linkedin.com/in/amélie-benoit-7611475b">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="contact-section" href="http://www.viadeo.com/p/002vtuvkj7ei8fn">
+                            <i class="fa fa-viadeo" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="page-footer blue">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">My awesome resume</h5>
+                <p class="grey-text text-lighten-4">Do not hesitate to contact me.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="https://fr.linkedin.com/in/amélie-benoit-7611475b" target="_blank">TODO
+                        linkedin</a></li>
+                    <li><a class="white-text" href="http://www.viadeo.com/p/002vtuvkj7ei8fn">TODO Viadeo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by Amélie Benoit
+        </div>
+    </div>
+</footer>
+
+
+<script style="display:none">
+    <!--
+    (function ($) {
+        $(function () {
+
+            $('.button-collapse').sideNav();
+            $('.parallax').parallax();
+
+        }); // end of document ready
+    })(jQuery); // end of jQuery name space
+    //-->
+</script>
+

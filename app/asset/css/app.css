@@ -1,0 +1,21 @@
+.hidden {
+  visibility: hidden;
+}
+.fixed {
+  position: fixed;
+}
+nav {
+  z-index: 100;
+}
+.contact-section {
+  color: black;
+  cursor: pointer;
+  padding: 5px 0;
+}
+.contact-section i.fa {
+  font-size: 4em;
+}
+.contact-section i.fa:hover {
+  color: #03a9f4;
+  transition: color 0.2s ease, padding 0.8s linear;
+}
