@@ -1,18 +1,36 @@
 <div class="container"
-     id="school">
+     id="school"
+    when-visible="setActive">
     <div class="section">
         <div class="row">
-            <div class="col s12 center">
-                <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4>Formation</h4>
-                <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                    scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna
-                    fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
-                    ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam
-                    eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi
-                    massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non
-                    tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae;</p>
+            <div class="col s12 ">
+                <h4 class="center">Formation</h4>
+                <div class="row hidden"
+                     when-visible="animateEnseirbIn">
+
+                    <div class="col s3">
+                        <img src="asset/images/enseirb.png" alt="ENSEIRB-Matmeca" id="enseirb"/>
+                    </div>
+
+                    <div class="col s9">
+                        <b><a href="http://www.enseirb-matmeca.fr/">ENSEIRB-Matmeca</a></b> à Talence.
+                        Option Informatique et spécialité Génie Logiciel.</div>
+                        <div>Diplôme obenu avec mention bien
+                    </div>
+                </div>
+
+                <div class="row hidden"
+                when-visible="animateIutIn">
+
+                    <div class="col s9 right-align">
+                        <b><a href="http://www.iut.u-bordeaux.fr/info/">IUT de Bordeaux I</a></b> à Gradignan.
+                        DUT Informatique.
+                    </div>
+
+                    <div class="col s3">
+                        <img src="asset/images/iut.gif" alt="Iut informatique" id="iut"/>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -1,4 +1,4 @@
-var awesomeResume = angular.module('awesomeResume', ['ngRoute', 'chart.js', 'angular-scroll-animate']);
+var awesomeResume = angular.module('awesomeResume', ['ngRoute', 'chart.js', 'angular-scroll-animate', 'angular-timeline']);
 
 awesomeResume.config(["$routeProvider", "ChartJsProvider",
     function ($routeProvider, ChartJsProvider) {

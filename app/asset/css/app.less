@@ -1,15 +1,93 @@
 @link-hover: #03a9f4;
 
+
+h4 {
+  color: #01579b;
+  padding-top: 10px;
+}
+
 .hidden {
   visibility: hidden;
+}
+
+.container.big{
+  width: 85%;
 }
 
 .fixed {
   position:fixed;
 }
 
+.parallax{
+  &.main {
+    opacity: 0.8;
+  }
+}
+.parallax-container{
+  &.quote {
+      height: 250px;
+
+    .quote-author{
+      padding: 20px 0;
+    }
+  }
+
+}
+
+
 nav {
-  z-index: 100;
+  z-index: 101;
+
+  .active {
+    border-bottom: white;
+    background-color:deeppink;
+    transition: border-bottom 0.2s ease, padding 0.8s linear;
+  }
+}
+
+img#enseirb {
+  width: 200px;
+}
+
+img#iut {
+  width: 300px;
+}
+
+.chip{
+  margin: 2px 3px;
+
+  &.small {
+    font-size: 10px;
+  }
+}
+
+#timeline{
+
+  img{
+    max-width:200px;
+  }
+
+  .exp-title {
+    color: #0288d1;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .exp-date {
+    font-size: 0.9em;
+    color: #0277bd;
+  }
+
+  .exp-content{
+    text-align: justify;
+  }
+
+  .exp-part{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 5px 0;
+    color: #0288d1;
+  }
 }
 
 .contact-section {
