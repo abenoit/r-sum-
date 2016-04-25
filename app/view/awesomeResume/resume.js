@@ -30,7 +30,6 @@ awesomeResume.controller('resumeController', function ($scope) {
     };
 
     var changeTab = function (tab) {
-        console.log("set active ", tab)
         $scope.$apply(function () {
             $scope.tab.active = tab;
         });
@@ -39,7 +38,7 @@ awesomeResume.controller('resumeController', function ($scope) {
     $scope.goTo = function (position) {
         $('html,body').animate({scrollTop: $(document.getElementById(position)).offset().top}, 'slow');
     };
-    
+
     $scope.animateNavBarOut = function () {
         navBarElt.addClass('hidden');
         navBarElt.removeClass('animated fadeInDown');
