@@ -4,7 +4,7 @@ awesomeResume.directive("schoolDirective", function () {
     return {
         restrict: 'E',
         templateUrl: 'view/awesomeResume/school/school.html',
-        controller: function ($scope, $rootScope) {
+        controller: function ($scope) {
             $scope.animateEnseirbIn = function($el) {
                 $el.removeClass('hidden');
                 $el.addClass('animated fadeInLeft');
@@ -14,11 +14,6 @@ awesomeResume.directive("schoolDirective", function () {
                 $el.removeClass('hidden');
                 $el.addClass('animated fadeInRight');
             };
-
-            $scope.setActive = function () {
-                console.log('skills tab is active');
-                $rootScope.activeTab = 'skills';
-            }
 
         }
     };

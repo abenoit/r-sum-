@@ -1,4 +1,6 @@
 awesomeResume.directive("contactDirective", function () {
+    "use strict";
+    
     return {
         restrict: 'E',
         templateUrl: 'view/awesomeResume/contact/contact.html',

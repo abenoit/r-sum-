@@ -1,5 +1,6 @@
 awesomeResume.directive("skillsDirective", function () {
-
+    "use strict";
+    
     return {
         restrict: 'E',
         templateUrl: 'view/awesomeResume/skills/skills.html',

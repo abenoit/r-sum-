@@ -1,4 +1,6 @@
 awesomeResume.directive("experienceDirective", function ($sce) {
+    "use strict";
+    
     return {
         restrict: 'E',
         templateUrl: 'view/awesomeResume/experience/experience.html',
