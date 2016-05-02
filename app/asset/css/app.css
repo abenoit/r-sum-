@@ -29,10 +29,10 @@ nav .active {
   transition: border-bottom 0.2s ease, padding 0.8s linear;
 }
 img#enseirb {
-  width: 200px;
+  width: 100%;
 }
 img#iut {
-  width: 300px;
+  width: 100%;
 }
 .chip {
   margin: 2px 3px;
