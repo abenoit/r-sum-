@@ -1,20 +1,46 @@
-<nav class="blue lighten-1 fixed hidden" role="navigation" id="navbar">
-    <div class="nav-wrapper container">
-        <ul class="center hide-on-med-and-down">
-            <li><a ng-click="goTo('index')">Accueil</a></li>
-            <li ng-class="{'active' : getActiveTab() == 'about'}"><a ng-click="goTo('about')">About me</a></li>
-            <li ng-class="{'active' : getActiveTab() == 'skills'}"><a ng-click="goTo('skills')">Compétences</a></li>
-            <li ng-class="{'active' : getActiveTab() == 'exp'}"><a ng-click="goTo('exp')">Expérience professionnelle</a></li>
-            <li ng-class="{'active' : getActiveTab() == 'school'}"><a ng-click="goTo('school')">Formation</a></li>
-            <li ng-class="{'active' : getActiveTab() == 'contact'}"><a ng-click="goTo('contact')">Contact</a></li>
-        </ul>
+<div class="hide-on-med-and-down hidden height-0"
+     id="navbarDiv">
+    <div class="navbar-fixed">
+    <nav class="blue lighten-1" role="navigation" id="navbar">
+        <div class="nav-wrapper container">
+            <ul class="center ">
+                <li><a ng-click="goTo('index')">Accueil</a></li>
+                <li ng-class="{'active' : getActiveTab() == 'about'}"><a ng-click="goTo('about')">About me</a>
+                </li>
+                <li ng-class="{'active' : getActiveTab() == 'skills'}"><a
+                        ng-click="goTo('skills')">Compétences</a>
+                </li>
+                <li ng-class="{'active' : getActiveTab() == 'exp'}"><a ng-click="goTo('exp')">Expérience
+                    professionnelle</a></li>
+                <li ng-class="{'active' : getActiveTab() == 'school'}"><a
+                        ng-click="goTo('school')">Formation</a>
+                </li>
+                <li ng-class="{'active' : getActiveTab() == 'contact'}"><a
+                        ng-click="goTo('contact')">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
-        <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-            <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-</nav>
+</div>
+
+<div class="navbar-fixed hide-on-large-only">
+    <nav class="blue lighten-1" role="navigation" id="navbar-med">
+        <div class="nav-wrapper container">
+            <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+                <li><a ng-click="goTo('index')">Accueil</a></li>
+                <li><a ng-click="goTo('about')">About me</a></li>
+                <li><a ng-click="goTo('skills')">Compétences</a></li>
+                <li><a ng-click="goTo('exp')">Expérience</a></li>
+                <li><a ng-click="goTo('school')">Formation</a></li>
+                <li><a ng-click="goTo('contact')">Contact</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
+
 
 <div id="index"
      class="parallax-container"
@@ -89,7 +115,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h5 class=" col s12 light white-text">
+                <h5 class="col s12 light white-text">
                     “Innover, ce n'est pas avoir une nouvelle idée mais arrêter d'avoir une vieille idée.” <br/>
                     <span class="right quote-author"><i>- Edwin Herbert Land </i></span>
                 </h5>
@@ -147,10 +173,17 @@
         }); // end of document ready
     })(jQuery); // end of jQuery name space
     //-->
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-76909509-1', 'auto');
     ga('send', 'pageview');

@@ -2,6 +2,7 @@ awesomeResume.controller('resumeController', function ($scope) {
     "use strict";
 
     var navBarElt = $(document.getElementById("navbar"));
+    var navDiv = $(document.getElementById("navbarDiv"));
 
     $scope.tab = {active: 'home'};
 
@@ -42,11 +43,13 @@ awesomeResume.controller('resumeController', function ($scope) {
     $scope.animateNavBarOut = function () {
         navBarElt.addClass('hidden');
         navBarElt.removeClass('animated fadeInDown');
+        navDiv.addClass('hidden');
     };
 
     $scope.animateNavBarIn = function () {
         navBarElt.removeClass('hidden');
         navBarElt.addClass('animated fadeInDown');
+        navDiv.removeClass('hidden');
     };
 
 });
