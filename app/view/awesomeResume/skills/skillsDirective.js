@@ -7,6 +7,13 @@ awesomeResume.directive("skillsDirective", function () {
         scope: false,
         controller: function ($scope) {
 
+            $scope.radarOptions = {
+                scaleOverride: true,
+                scaleSteps: 5,
+                scaleStepWidth: 20,
+                scaleStartValue: 0
+            };
+
             $scope.frontSkillsLabel = ["HTML", "CSS", "Bootstrap", "AngularJs", "JQuery", "JQuery mobile", "Android"];
             $scope.backSkillsLabel = ["C#", "Java", "SQL Server", "Mongo", "Redis", "NodeJs"];
             $scope.softwareSkillsLabel = ["Windows", "Linux / MacOs", "Jenkins", "Sonar", "RabbitMQ", "Git", "SVN"];
