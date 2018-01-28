@@ -64,6 +64,17 @@ img#iut {
 .quote.en-version {
   color: #aaaaaa;
 }
+.timeline-panel ul {
+  padding: 20px;
+}
+.timeline-panel ul li {
+  list-style: circle;
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+.timeline-panel ul li:before {
+  content: none!important;
+}
 .contact-section {
   color: black;
   cursor: pointer;
