@@ -19,9 +19,15 @@
                                         <timeline-heading>
                                             <span class="exp-title" ng-bind="::exp.title"></span>
                                             <div>
-                                                <img ng-src="asset/images/{{exp.logo}}" />
+                                                <a ng-href="{{::exp.companySite}}">
+                                                    <img ng-src="asset/images/{{exp.logo}}" />
+                                                </a>
                                             </div>
-                                            <span class="exp-date" ng-bind="::exp.date"></span>
+                                            <div class="exp-place">
+                                                <i class="material-icons">place</i>
+                                                <span ng-bind="::exp.place"></span>
+                                            </div>
+                                            <div class="exp-date" ng-bind="::exp.date"></div>
                                         </timeline-heading>
                                         <p class="exp-content" ng-bind-html="exp.content"></p>
                                         <div class="small chip" ng-repeat="skill in exp.skills" ng-bind="::skill"></div>

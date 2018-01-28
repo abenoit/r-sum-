@@ -14,6 +14,8 @@ awesomeResume.directive("experienceDirective", function ($sce) {
             $scope.experiences = [
                 {
                     logo: 'lectra.png',
+                    place: 'Cestas, France',
+                    companySite: 'https://www.lectra.com/fr',
                     date: "October 2016 to now",
                     skills: ['HTML', 'SCSS', 'React', 'Redux', 'Redux-saga', 'Storybook', 'Jest', 'Jasmine', 'Git'],
                     content: $sce.trustAsHtml("I joind the R&D team to work on a solution for the fashion industry. " +
@@ -24,8 +26,10 @@ awesomeResume.directive("experienceDirective", function ($sce) {
                 },
                 {
                     logo: 'atinternet.jpg',
+                    place: 'Mérignac, France',
+                    companySite: 'https://www.atinternet.com/',
                     date: "September 2014 to September 2016",
-                    skills: ['HTML/CSS', 'Less', 'AngularJs', 'Bootstrap', 'C#', 'VB', 'SQL Server', 'Mongo', 'Redis', 'NodeJs', 'Svn/Git'],
+                    skills: ['HTML/CSS', 'Less', 'AngularJs', 'Bootstrap', 'C#', 'SQL Server', 'Mongo', 'Redis', 'NodeJs', 'Svn/Git'],
                     content: $sce.trustAsHtml("I joind the R&D \"platform\" team. Working with SCRUM agile methodology, my missions were : <br/>" +
                         "<ul><li> Conception and development of components (services, directives ..) using d'AngularJs and NodeJS</li>" +
                         "<li>Developed interfaces for the clients (all applications related to access right management and users' profile), and also interfaces for an internal usage. I used Javascript, AngularJS, Jquery, Bootstrap</li>" +
@@ -34,6 +38,8 @@ awesomeResume.directive("experienceDirective", function ($sce) {
                         "<li>Improvement of the security system and integration within multiple applications</li></ul>")
                 }, {
                     logo: 'Total.jpg',
+                    place: 'Paris, France',
+                    companySite: 'www.total.com',
                     skills: ['HTML/CSS', 'Jquery', 'Jquery Mobile', 'MySql', 'PHP', 'Android', 'Objective-c', 'Project Management'],
                     date: 'June to Septembre 2014',
                     content: $sce.trustAsHtml("I joined a mobile project management team at Total Marketing Services" +
@@ -47,6 +53,8 @@ awesomeResume.directive("experienceDirective", function ($sce) {
                         "<li>Native applications to test the possible interactions between each other (Android, iOS)</li></ul>")
                 }, {
                     logo: 'isit.png',
+                    place: 'Fukuoka, Japan',
+                    companySite: 'http://www2.isit.or.jp/index.en.html',
                     date: 'February to July 2013',
                     skills: ['HTML', 'CSS', 'PHP', 'MySql', 'Git'],
                     content: $sce.trustAsHtml("<div class='exp-part'>Context</div>" +
@@ -57,10 +65,13 @@ awesomeResume.directive("experienceDirective", function ($sce) {
                         "Final but not least, I set up an authentication system working cross-domain (SSO) so a user could keep his / her session opened in every application (s)he would use, with no need to authenticate in each.")
                 }, {
                     logo: 'enseirb.png',
+                    place: 'Bordeaux, France',
+                    companySite: 'https://enseirb-matmeca.bordeaux-inp.fr/fr',
                     skills: ['HTML', 'CSS', 'Javascript', 'MySql', 'SVN'],
                     content: $sce.trustAsHtml("Team web developments : Created a website working with database for school partnerships.")
                 }, {
                     title: 'Loopweb',
+                    place: 'Bordeaux, France',
                     skills: ['HTML', 'CSS', 'Javascript', 'MySql', 'SVN'],
                     date: 'August 2011 to August 2012',
                     content: $sce.trustAsHtml("Independant Contractor <ul>" +
@@ -68,6 +79,8 @@ awesomeResume.directive("experienceDirective", function ($sce) {
                         "<li>Conceived, developed and launched a restaurant website with an administration interface</li></ul>")
                 }, {
                     logo: 'msp.jpg',
+                    place: 'Saint Loubès, France',
+                    companySite: 'http://www.msp-sas.fr/',
                     skills: ['HTML', 'CSS', 'Javascript', 'Joomla!', 'MySql'],
                     date: 'April to August 2011',
                     content: $sce.trustAsHtml("Web sites / mobile web sites development, and Joomla templates integration")

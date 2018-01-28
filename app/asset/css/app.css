@@ -52,6 +52,13 @@ img#iut {
   font-size: 0.9em;
   color: #0277bd;
 }
+#timeline .exp-place {
+  font-size: 0.9em;
+  color: #01579b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #timeline .exp-content {
   text-align: justify;
 }

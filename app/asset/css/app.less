@@ -1,8 +1,9 @@
 @link-hover: #03a9f4;
 
+@color-dark-blue: #01579b;
 
 h4 {
-  color: #01579b;
+  color: @color-dark-blue;
   padding-top: 10px;
 }
 
@@ -74,6 +75,14 @@ img#iut {
   .exp-date {
     font-size: 0.9em;
     color: #0277bd;
+  }
+
+  .exp-place {
+    font-size: 0.9em;
+    color: @color-dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .exp-content{
