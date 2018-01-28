@@ -1,27 +1,31 @@
-<div class="hide-on-med-and-down hidden height-0"
-     id="navbarDiv">
+<div class="hide-on-med-and-down hidden height-0" id="navbarDiv">
     <div class="navbar-fixed">
-    <nav class="blue lighten-1" role="navigation" id="navbar">
-        <div class="nav-wrapper container">
-            <ul class="center ">
-                <li><a ng-click="goTo('index')">Accueil</a></li>
-                <li ng-class="{'active' : getActiveTab() == 'about'}"><a ng-click="goTo('about')">About me</a>
-                </li>
-                <li ng-class="{'active' : getActiveTab() == 'skills'}"><a
-                        ng-click="goTo('skills')">Compétences</a>
-                </li>
-                <li ng-class="{'active' : getActiveTab() == 'exp'}"><a ng-click="goTo('exp')">Expérience
-                    professionnelle</a></li>
-                <li ng-class="{'active' : getActiveTab() == 'school'}"><a
-                        ng-click="goTo('school')">Formation</a>
-                </li>
-                <li ng-class="{'active' : getActiveTab() == 'contact'}"><a
-                        ng-click="goTo('contact')">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+        <nav class="blue lighten-1" role="navigation" id="navbar">
+            <div class="nav-wrapper container">
+                <ul class="center ">
+                    <li>
+                        <a ng-click="goTo('index')">Home</a>
+                    </li>
+                    <li ng-class="{'active' : getActiveTab() == 'about'}">
+                        <a ng-click="goTo('about')">About me</a>
+                    </li>
+                    <li ng-class="{'active' : getActiveTab() == 'skills'}">
+                        <a ng-click="goTo('skills')">Skills</a>
+                    </li>
+                    <li ng-class="{'active' : getActiveTab() == 'exp'}">
+                        <a ng-click="goTo('exp')">Work Experience
+                        </a>
+                    </li>
+                    <li ng-class="{'active' : getActiveTab() == 'school'}">
+                        <a ng-click="goTo('school')">Education</a>
+                    </li>
+                    <li ng-class="{'active' : getActiveTab() == 'contact'}">
+                        <a ng-click="goTo('contact')">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
 </div>
 
@@ -29,53 +33,46 @@
     <nav class="blue lighten-1" role="navigation" id="navbar-med">
         <div class="nav-wrapper container">
             <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-                <li><a ng-click="goTo('index')">Accueil</a></li>
-                <li><a ng-click="goTo('about')">About me</a></li>
-                <li><a ng-click="goTo('skills')">Compétences</a></li>
-                <li><a ng-click="goTo('exp')">Expérience</a></li>
-                <li><a ng-click="goTo('school')">Formation</a></li>
-                <li><a ng-click="goTo('contact')">Contact</a></li>
+                <li>
+                    <a ng-click="goTo('index')">Home</a>
+                </li>
+                <li>
+                    <a ng-click="goTo('about')">About me</a>
+                </li>
+                <li>
+                    <a ng-click="goTo('skills')">Skills</a>
+                </li>
+                <li>
+                    <a ng-click="goTo('exp')">Work Experience</a>
+                </li>
+                <li>
+                    <a ng-click="goTo('school')">Education</a>
+                </li>
+                <li>
+                    <a ng-click="goTo('contact')">Contact</a>
+                </li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
     </nav>
 </div>
 
 
-<div id="index"
-     class="parallax-container"
-     when-visible="animateNavBarOut"
-     when-not-visible="animateNavBarIn">
+<div id="index" class="parallax-container" when-visible="animateNavBarOut" when-not-visible="animateNavBarIn">
     <div class="section no-pad-bot">
         <div class="container">
-            <br><br>
+            <br>
+            <br>
             <h1 class="header center light-blue-text text-darken-2">Amélie Benoit</h1>
             <div class="row center">
-                <h5 class="header col s12 light light-blue-text">Ingénieure développement web / mobile</h5>
+                <h5 class="header col s12 light light-blue-text">Web Development Engineer</h5>
             </div>
-            <!--<div class="row center">
-                <a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('about')">
-                    <i class="material-icons left">sentiment_satisfied</i>
-                    A propos</a>
-                <a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('skills')">
-                    <i class="material-icons left">build</i>
-                    Compétences</a>
-
-                <a class="waves-effect  waves-light btn blue lighten-1" ng-click="goTo('exp')">
-                    <i class="material-icons left">work</i>
-                    Expérience professionnelle</a>
-                &lt;!&ndash;<a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('school')">&ndash;&gt;
-                &lt;!&ndash;<i class="material-icons left" blue lighten-1>school</i>&ndash;&gt;
-                &lt;!&ndash;Formation</a>&ndash;&gt;
-                <a class="waves-effect waves-light btn blue lighten-1" ng-click="goTo('contact')">
-                    <i class="material-icons left">mail_outline</i>
-                    Contact</a>
-            </div>-->
         </div>
     </div>
     <div class="parallax main">
-        <img src="asset/images/Working-it.jpg" alt="Unsplashed background img 1"
-             style="display: block; transform: translate3d(-50%, 152px, 0px);">
+        <img src="asset/images/Working-it.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 152px, 0px);">
     </div>
 
 </div>
@@ -85,23 +82,29 @@
         <div class="row">
             <div class="col s12 m6">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">favorite_border</i></h2>
-                    <h5 class="center">Curieuse et passionnée</h5>
+                    <h2 class="center brown-text">
+                        <i class="material-icons">favorite_border</i>
+                    </h2>
+                    <h5 class="center">Curious and passionate</h5>
 
-                    <p class="light">Passionnée d'informatique, j'ai obtenu deux diplômes avec mention.
-                        Je suis toujours à la recherche de nouvelles technologies sur lesquelles me former.
-                        C'est ainsi que je me suis auto-formée à Android et développé diverses applications.</p>
+                    <p class="center light">Passionate about computer science, I am always looking to improve myself and to learn about new technologies
+                        or frameworks. That's how I learned about Android development by myself and also developed multiple
+                        projects on my own.</p>
                 </div>
             </div>
 
             <div class="col s12 m6">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">work</i></h2>
-                    <h5 class="center">Expérience et adaptation</h5>
+                    <h2 class="center brown-text">
+                        <i class="material-icons">work</i>
+                    </h2>
+                    <h5 class="center">Experience and adaptability</h5>
 
-                    <p class="light">Durant mes études et mes premières expériences profesionnelles,
-                        j'ai cherché à expérimenter et donc à m'adapter dans divers cadres entrepreneuriaux :
-                        auto-entreprise, TPE, PME, laboratoire ou multi-nationale. </p>
+                    <p class="center light">During my studies and my profesional experience, I managed to experiment multiple types of companies:
+                        independant contractor, small / medium business, international company, laboratory. It leads me to
+                        show a strong adaptation capability, and as the experience were very different, I also learned about
+                        various technologies, methodologies and ways to work.
+                    </p>
                 </div>
             </div>
 
@@ -116,8 +119,13 @@
         <div class="container">
             <div class="row center">
                 <h5 class="col s12 light white-text">
-                    “Innover, ce n'est pas avoir une nouvelle idée mais arrêter d'avoir une vieille idée.” <br/>
-                    <span class="right quote-author"><i>- Edwin Herbert Land </i></span>
+                    “Innover, ce n'est pas avoir une nouvelle idée mais arrêter d'avoir une vieille idée.”
+                    <br/>
+                    <i class="quote en-version">"Innovation is not about having a new idea but stopping having an old idea.”</i>
+                    <br/>
+                    <span class="right quote-author">
+                        <i>- Edwin Herbert Land </i>
+                    </span>
                 </h5>
             </div>
         </div>
@@ -139,17 +147,20 @@
     <div class="container">
         <div class="row">
             <div class="col l3 s12 right">
-                <h5 class="white-text">Télécharger</h5>
+                <h5 class="white-text">Download</h5>
                 <ul>
-                    <li><a class="white-text" href="/CV_Amelie_Benoit.pdf" download>Mon CV</a></li>
+                    <li>
+                        <a class="white-text" href="/CV_Amelie_Benoit.pdf" download>My Résumé</a>
+                    </li>
                 </ul>
             </div>
             <div class="col l3 s12 right">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><a class="white-text" href="https://fr.linkedin.com/in/amélie-benoit-7611475b" target="_blank">
-                        LinkedIn</a></li>
-                    <li><a class="white-text" href="http://www.viadeo.com/p/002vtuvkj7ei8fn">Viadeo</a></li>
+                    <li>
+                        <a class="white-text" href="https://fr.linkedin.com/in/amélie-benoit-7611475b" target="_blank">
+                            LinkedIn</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -160,33 +171,3 @@
         </div>
     </div>
 </footer>
-
-
-<script style="display:none">
-    <!--
-    (function ($) {
-        $(function () {
-
-            $('.button-collapse').sideNav();
-            $('.parallax').parallax();
-
-        }); // end of document ready
-    })(jQuery); // end of jQuery name space
-    //-->
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-76909509-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
-

@@ -14,14 +14,13 @@ awesomeResume.directive("skillsDirective", function () {
                 scaleStartValue: 0
             };
 
-            $scope.frontSkillsLabel = ["HTML", "CSS", "Bootstrap", "AngularJs", "JQuery", "JQuery mobile", "Android"];
-            $scope.backSkillsLabel = ["C#", "Java", "SQL Server", "Mongo", "Redis", "NodeJs"];
+            $scope.frontSkillsLabel = ["HTML", "SCSS / Less", "Jasmine / Jest", "AngularJs", "React", "Redux - Redux Saga", "Storybook"];
+            $scope.backSkillsLabel = ["C#.Net", "Java", "SQL Server", "Mongo", "Redis", "NodeJs"];
             $scope.softwareSkillsLabel = ["Windows", "Linux / MacOs", "Jenkins", "Sonar", "RabbitMQ", "Git", "SVN"];
 
-            $scope.frontSkillsLevel = [[90, 80, 100, 80, 80, 80, 60]];
+            $scope.frontSkillsLevel = [[90, 90, 90, 80, 80, 80, 70]];
             $scope.backSkillsLevel = [[70, 60, 70, 60, 70, 60]];
-            $scope.softwareSkillsLevel = [[100, 90, 80, 80, 80, 80, 95]];
+            $scope.softwareSkillsLevel = [[100, 90, 70, 70, 60, 85, 90]];
         }
     };
-
 });
